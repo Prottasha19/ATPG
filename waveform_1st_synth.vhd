@@ -3,6 +3,8 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 use work.parameter.all;
 
+--  cpmments
+
 entity waveform_gen is
   port(
     clk,rst,start,mode,data_in : in std_logic;
@@ -103,7 +105,7 @@ ram_block:SRAM64x8_1rw
     ); 
 
   -----------------------------------------------------------------------------
-  -- Added for TST
+  -- Added for TST 
   -----------------------------------------------------------------------------
 
 xor_reg:process(clk,rst) is
